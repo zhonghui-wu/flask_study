@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>控制语句</title>
+</head>
+<body>
+{% if age > 18 %}
+    <div>可以进入网吧</div>
+{% elif age == 18 %}
+    <div>需要家长陪同进入</div>
+{% else %}
+    <div>不可以进入</div>
+{%endif%}
+
+
+{% for i in books %}
+    <div>这本书的内容为：{{i.name}}，{{i.age}}</div>
+{% endfor %}
+</body>
+</html>
